@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Joan&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #377070;
+  margin-bottom: 5%;
+  border-radius: 0.2rem;
+}
+
+.navbar h1 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(129, 4, 4);
+}
+
+/*BODY*/
+body {
+  background-color: khaki;
+}
+
+/*LOADER*/
+.progess {
+  position: relative;
+  height: 10px;
+  width: 20%;
+  border: 4px solid black;
+  border-radius: 15px;
+  margin: 10% auto 0 auto;
+}
+
+.progess .color {
+  position: absolute;
+  background-color: aquamarine;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 2s infinite linear;
+}
+
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 50%;
+  }
+
+  50% {
+    width: 75%;
+  }
+
+  75% {
+    width: 85%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 30%;
+  float: left;
+  background-color: #938e08;
+  border: 3px solid gold;
+  margin: 3rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.card img {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 80%;
+  border-bottom: 3px solid gold;
+  margin: 0 auto 5% auto;
+}
+
+.details h3 {
+  color: #22221e;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+.details p {
+  font-family: 'Joan', serif;
+  color: #14010a;
+}
